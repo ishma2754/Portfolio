@@ -20,6 +20,7 @@ body{
   flex-direction: column;
   gap: 72px;
   padding: 14px;
+  height: 1000px;
 }
 
 .darkerText {
@@ -36,21 +37,44 @@ footer {
 }
 
 header{
+  background-color:;
+  /*
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
+  */
 }
 
+
+
 nav{
+  background-color: white;
+  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
   color: var(--secondary-color);
   display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+  
+  /*
   align-items: center;
+  */
   gap: 32px;
+}
+
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
 }
 
 nav a {
   cursor: pointer;
+  padding: 12px;
 }
 
 nav a:hover{
